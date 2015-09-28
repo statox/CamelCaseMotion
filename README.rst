@@ -4,6 +4,15 @@ CamelCaseMotion.vim
 
 Created By Ingo Karkat (https://github.com/inkarkat)
 
+Why this fork?
+==============
+This fork actually is a work in progress. My main goal is to use the motions
+defined by the original plugin to create text objects corresponding to
+camelCase words.
+
+My objective is to define `,iw` and `,aw` which will behave like `iw` and
+`aw` but camelwise instead of wordwise.
+
 Description
 ============
 Vim provides many built-in motions, e.g. to move to the next word, or end of
