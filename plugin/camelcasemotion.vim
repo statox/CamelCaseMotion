@@ -195,10 +195,17 @@ function! s:CreateInnerMotionMappings()
     endfor
 endfunction
 
+function! s:CreateInnerTextObjects()
+	vmap ,iw <Esc>l,bv,e
+	omap ,iw :normal v,i<CR>
+endfunction
+
 call s:CreateMotionMappings()
 call s:CreateInnerMotionMappings()
+call s:CreateInnerTextObjects()
 
 delfunction s:CreateMotionMappings
 delfunction s:CreateInnerMotionMappings
+delfunction s:CreateInnerTextObjects
 
 " vim: set sts=4 sw=4 noexpandtab ff=unix fdm=syntax :
